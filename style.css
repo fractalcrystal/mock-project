@@ -53,6 +53,11 @@ p {
     color: #5F1818;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .nav a {
@@ -68,6 +73,23 @@ p {
     color: white;
 }
 
+.searchicon {
+    padding-top: 10px;
+    display: inline-block;
+    text-align: right;
+    flex: auto;
+    padding-right: 10px;
+}
+
+.trolley {
+    padding-top: 10px;
+    display: inline-block;
+    text-align: right;
+    flex: auto;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
 footer {
     background-color: #F29696;
     font-family: 'Poppins', sans-serif;
@@ -81,10 +103,36 @@ footer {
 }
 
 footer a {
-    color:#5F1818;
-} 
-
-footer a:active {
-    color: white
+    text-decoration: none;
+    color: white;
 }
 
+footer a:active {
+    color: #5F1818;
+}
+
+footer a:hover {
+    color: #5F1818;
+    text-decoration: none;
+
+}
+
+.columnhead a {
+    color:#5F1818;
+}
+
+.columnhead a:hover {
+    color: white;
+    font-weight: 700;
+}
+
+.icons {
+    text-align: right;
+}
+
+#footerimage {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1%;
+}
