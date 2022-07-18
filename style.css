@@ -26,11 +26,12 @@ h3 {
 
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 499;
-    color: #5F1818;
+    color: #FA5C5C;
     line-height: 25px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h5 {
@@ -359,13 +360,21 @@ footer a:hover {
 	background: rgba(0, 0, 0, 0.6);
 }
 
+.container-flavours {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
 .card {
     width: 200px;
-    height: 400px;
+    height: 200px;
     display: grid;
     grid-template-rows: minmax(100%, 1fr);
     grid-template-areas: "stack";
     overflow: hidden;
+    flex: auto;
 }
 
 .card > img,
@@ -382,12 +391,20 @@ footer a:hover {
 .card > figcaption {
     grid-area: stack;
     background-color: #242424e0;
-    transform: translateY(calc(100% - 4rem));
+    transform: translateY(calc(100% - 3rem));
     transition: transform 600ms;
 }
 
 .card > figcaption > h3 {
+    text-align: center;
+    padding-top: 15px;
     height: 4rem;
+}
+
+.card > figcaption > p {
+    height: 3rem;
+    text-align: center;
+    color: white;
 }
 
 .card:hover figcaption {
