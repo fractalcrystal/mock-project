@@ -48,7 +48,6 @@ p {
     font-weight: 500;
 }
 
-
 .nav {
     background-color: #F29696;
     color: #5F1818;
@@ -129,13 +128,6 @@ footer a:hover {
 
 .icons {
     text-align: right;
-}
-
-#footerimage {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1%;
 }
 
 #text1 {
@@ -409,4 +401,11 @@ footer a:hover {
 
 .card:hover figcaption {
     transform: none;
+}
+
+footer {
+    background-image: url(/footerimage.PNG);
+    background-size: 120px;
+    background-position: 55%;
+    background-repeat: no-repeat;
 }
