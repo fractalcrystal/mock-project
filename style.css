@@ -78,7 +78,7 @@ p {
     padding-top: 10px;
     display: inline-block;
     text-align: right;
-    flex: auto;
+    flex: 10 1 auto;
     padding-right: 10px;
 }
 
@@ -205,7 +205,7 @@ footer a:hover {
   }
 
   .text3 {
-    background-color: #white;
+    background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -274,8 +274,8 @@ footer a:hover {
 .carousel .item h4 {
 	font-size: 18px;
 	margin: 10px 0;
-    color:
 }
+
 .carousel .item .btn {
 	color:#5F1818;
     border-radius: 0;
@@ -374,7 +374,7 @@ footer a:hover {
     grid-template-rows: minmax(100%, 1fr);
     grid-template-areas: "stack";
     overflow: hidden;
-    flex: auto;
+    flex: 1 1 auto;
 }
 
 .card > img,
