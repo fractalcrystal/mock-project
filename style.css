@@ -5,6 +5,7 @@ h1 {
     color: #4195C5;
     line-height: 100px;
     text-transform: capitalize;
+    padding: 50px;
 }
 
 h2 {
@@ -409,3 +410,4 @@ footer {
     background-position: 55%;
     background-repeat: no-repeat;
 }
+
