@@ -405,7 +405,7 @@ footer a:hover {
 
 footer {
     background-image: url(/footerimage.PNG);
-    background-size: 120px;
+    background-size: 15%;
     background-position: 55%;
     background-repeat: no-repeat;
 }
