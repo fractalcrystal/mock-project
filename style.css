@@ -250,8 +250,8 @@ footer a:hover {
 }
 
 .carousel {
-	margin: 50px auto;
-	padding: 0 70px;
+	margin: 0px;
+	padding: 0px;
 }
 .carousel .item {
 	min-height: 330px;
