@@ -43,6 +43,15 @@ h5 {
     line-height: 10px;
 }
 
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    color: #F29696;
+}
+
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
@@ -82,7 +91,7 @@ p {
     padding-right: 10px;
 }
 
-.trolley {
+#trolley {
     padding-top: 10px;
     display: inline-block;
     text-align: right;
@@ -431,11 +440,61 @@ footer {
     background-color: #5F1818;
 }
 
-h6 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
     text-align: center;
-    align-items: center;
-    color: #F29696;
-}
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    margin-left: -150px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 90%;
+    left: 85%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
