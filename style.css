@@ -366,6 +366,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 60px;
     flex-wrap: wrap;
 }
 
