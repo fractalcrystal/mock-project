@@ -5,6 +5,7 @@ h1 {
     color: #4195C5;
     line-height: 100px;
     text-transform: capitalize;
+    padding: 50px;
 }
 
 h2 {
@@ -47,7 +48,6 @@ p {
     font-size: 10px;
     font-weight: 500;
 }
-
 
 .nav {
     background-color: #F29696;
@@ -129,13 +129,6 @@ footer a:hover {
 
 .icons {
     text-align: right;
-}
-
-#footerimage {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1%;
 }
 
 #text1 {
@@ -409,4 +402,40 @@ footer a:hover {
 
 .card:hover figcaption {
     transform: none;
+}
+
+footer {
+    background-image: url(/footerimage.PNG);
+    background-size: 15%;
+    background-position: 55%;
+    background-repeat: no-repeat;
+}
+
+.modal {
+    padding: 55px;
+
+}
+
+.modal-card-head {
+    background-color: #5F1818;
+    text-align: center;
+}
+
+.modal-body {
+    background-color: #F29696;
+    text-align: center;
+    padding: 55px;
+}
+
+.modal-card-foot {
+    background-color: #5F1818;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    color: #F29696;
 }
