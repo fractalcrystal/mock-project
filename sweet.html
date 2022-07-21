@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our flavours</title>
+    <title>Something Sweet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/98ec21bfef.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href=
-    "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -60,154 +58,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
-   <div class="container-flavours">
-    <figure class="card">
-        <img src="./images/vanilla-clotted-cream.png" alt="ice cream">
+    <div class="container-flavours">
+        <figure class="card">
+            <img src="./vanilla-clotted-cream.png" alt="ice cream">
+            <figcaption>
+                <h4>Honeycomb<br>Cream</h4>
+                <p>With West Country clotted cream. <br>Product size: 460ml.</p>
+            </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="./salted-caramel.png" alt="ice cream">
+          <figcaption>
+              <h4>Salted<br>Caramel</h4>
+              <p>With a salted caramel swirl and cinder toffee pieces. <br>Product size: 460ml.</p>
+          </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="./chocolate-brownie.png" alt="ice cream">
         <figcaption>
-            <h4>Vanilla Clotted <br>Cream</h4>
-            <p>With West Country clotted cream. <br>Product size: 460ml.</p>
+            <h4>Chocolate <br>Brownie</h4>
+            <p>With a chocolate ripple and brownie pieces. <br>Product size: 460ml.</p>
         </figcaption>
     </figure>
-    <figure class="card">
-      <img src="./images/salted-caramel.png" alt="ice cream">
-      <figcaption>
-          <h4>Salted <br>Caramel</h4>
-          <p>With a salted caramel swirl and cinder toffee pieces. <br>Product size: 460ml.</p>
-      </figcaption>
-  </figure>
-  <figure class="card">
-    <img src="./images/chocolate-brownie.png" alt="ice cream">
-    <figcaption>
-        <h4>Chocolate <br>Brownie</h4>
-        <p>With a chocolate ripple and brownie pieces. <br>Product size: 460ml.</p>
-    </figcaption>
-</figure>
-<figure class="card">
-  <img src="./images/mango-passionfruit.png" alt="ice cream">
-  <figcaption>
-      <h4>Mango & <br>Passionfruit</h4>
-      <p>With live cultures. <br>Product size: 460ml.</p>
-  </figcaption>
-</figure>
-<figure class="card">
-  <img src="./images/honeycomb.png" alt="ice cream">
-  <figcaption>
-      <h4>Honeycomb <br>Crunch</h4>
-      <p>With crunchy Honeycomb. <br>Product size: 460ml.</p>
-  </figcaption>
-</figure>
-<figure class="card">
-  <img src="./images/chocolate-cherry.png" alt="ice cream">
-  <figcaption>
-      <h4>Chocolate & <br>Cherry</h4>
-      <p>With live cultures and a cherry ripple. <br>Product size: 460ml.</p>
-  </figcaption>
-</figure>
-<figure class="card">
-  <img src="./images/sticky-toffee-pudding.png" alt="ice cream">
-  <figcaption>
-      <h4>Sticky Toffee <br>Pudding</h4>
-      <p>With a toffee ripple. <br>Product size: 460ml.</p>
-  </figcaption>
-</figure>
-<figure class="card">
-  <img src="./images/caramel-pecan.png" alt="ice cream">
-  <figcaption>
-      <h4>Caramel Pecan <br>Swirl</h4>
-      <p>With caramel swirls and pecan pieces. <br>Product size: 460ml.</p>
-  </figcaption>
-</figure>
-</div>
-    
-<div>
-  <div id="text2">
-    <h3>Can’t decide what flavor to choose?</h3>
-    <p>We’ve got you covered!</p>
-     <!-- Test Modal -->
-    <div class=".modal">
-  <div class="modal" id="modal1">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <h6 aside style="width:60%;margin:auto;">
-          Find Your Flavor!
-                  </h6 aside>
-      </header>
-      <section class="modal-card-body">
-        <h3>Do you want something:</h3>
-        <button id="fruity" class="button1" class="button is-success">
-          Fruity
-        </button>
-                  <script type="text/javascript">
-                      document.getElementById("fruity").onclick = function () {
-                          location.href = "./fruity.html";
-                      };
-                  </script>
-                  <button id="sweet" class="button1" class="button is-success">
-          Sweet
-        </button>
-                  <script type="text/javascript">
-                      document.getElementById("sweet").onclick = function () {
-                          location.href = "./sweet.html";
-                      };
-                  </script>
-                  <button id="crazy" class="button1" class="button is-success">
-          Crazy
-        </button>
-                  <script type="text/javascript">
-                      document.getElementById("crazy").onclick = function () {
-                          location.href = "./crazy.html";
-                      };
-                  </script>
-
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-danger">
-          Cancel
-      </button>
-      </footer>
     </div>
-  </div>
-
-  <!-- Modal button for trigger -->
-  <button class="button2" type="button" onclick="openModal()">Find Your Flavor</button>
-    
-  </button>
-</div>
-
-<script>
-  function openModal() {
-    document.getElementById("modal1")
-      .classList.add("is-active");
-  }
-
-  function closeModal() {
-    document.getElementById("modal1")
-      .classList.remove("is-active");
-  }
-  
-  document.querySelectorAll(
-".modal-background, .modal-close,.modal-card-head .delete, .modal-card-foot .button"
-  ).forEach(($el) => {
-    const $modal = $el.closest(".modal");
-    $el.addEventListener("click", () => {
-
-      $modal.classList.remove("is-active");
-    });
-  });
-
-  document.addEventListener("keydown", (event) => {
-    const e = event || window.event;
-    if (e.keyCode === 27) {
-      closeModal();
-    }
-  });
-</script>
-    <p>Take the taste test now and let us decide for you!</p>
-   </div>
-  </div>
-
 
   <div>
     <div id="text1">
