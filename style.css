@@ -249,6 +249,11 @@ footer a:hover {
 	bottom: -20px;
 }
 
+.text5 {
+    background-color: #F29696;
+    padding: 50px;
+}
+
 .carousel {
 	margin: 0px;
 	padding: 0px;

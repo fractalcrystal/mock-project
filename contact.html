@@ -7,6 +7,8 @@
     <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/98ec21bfef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -19,10 +21,101 @@
 
   <script id="replace_with_navbar" src="nav.js"></script>  
 
-<h2>Contact </h2>
+  <div>
+    <div id="text1">
+<h2>Contact</h2>
 
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h3>Have a question about your order? Email us.</h3><br>
 
+
+<div class="text5">
+ 
+  <form action="#">
+      <input type="text" name="full_name" placeholder="Full name..."> <input type="email" name="email" placeholder="Email Address..."><br>
+      <br><textarea name="comment" placeholder="Type your comment..." id="w3review" name="w3review" rows="4" cols="42"></textarea><br>
+      <button class="button2" type="button" onclick="openModal()">Submit Comment</button>
+    
+
+  </form>
+</div>
+<div class=".modal">
+  <div class="modal" id="modal1">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <h2 aside style="width:60%;margin:auto;">
+          Thank You!
+                  </h2 aside>
+      </header>
+      <section class="modal-card-body">
+        
+        <h3> Your comment has been submitted!</h3>
+      
+                  <script type="text/javascript">
+                      document.getElementById("crazy").onclick = function () {
+                          location.href = "./crazy.html";
+                      };
+                  </script>
+
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-danger" aside style="width:60%;margin:auto;">
+          Exit
+      </button>
+      </footer>
+    </div>
+  </div>
+    
+  </button>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("modal1")
+      .classList.add("is-active");
+  }
+
+  function closeModal() {
+    document.getElementById("modal1")
+      .classList.remove("is-active");
+  }
+  
+  document.querySelectorAll(
+".modal-background, .modal-close,.modal-card-head .delete, .modal-card-foot .button"
+  ).forEach(($el) => {
+    const $modal = $el.closest(".modal");
+    $el.addEventListener("click", () => {
+
+      $modal.classList.remove("is-active");
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const e = event || window.event;
+    if (e.keyCode === 27) {
+      closeModal();
+    }
+  });
+</script>
+  <br> Ice-Creme Shoppe is a registered Oxford LLC located at Alfred St, Wantage, Oxfordshire, OX12 8AE<br>
+
+  <br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1268007.7262730906!2d-2.
+3573393413543053!3d51.63094654798949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48
+76b1ee73156343%3A0xafda0ffb0c28d4a3!2sMansfield%20Farm%20Real%20Dairy%20Ice%20Cream!5e0!3m2!
+1sen!2suk!4v1658843135634!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" 
+loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+  
+  <br>For customer support, please email&nbsp
+  <a target="_blank" rel="noreferrer noopener" class="text-link">hello@shoppe.co.uk&nbsp;</a><br>
+  
+  <br>For business and wholesale inquiries, please email&nbsp
+  <a target="_blank" rel="noreferrer noopener" class="text-link">business@shoppe.co.uk&nbsp;</a><br>
+  
+  <br>Learn more about our store details and policies&nbsp<a target="_blank" title="Ninja Melk Store Details, Terms and Return Policy" style="color: #2b00ff;" rel="noopener noreferrer" class="text-link">here.</a>
+</div>
+</div>
 
     <footer>
         <div class="container">
