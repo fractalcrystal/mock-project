@@ -58,6 +58,14 @@ p {
     font-weight: 500;
 }
 
+a {
+    color: #F29696;
+}
+
+a:hover {
+    color: #5F1818;
+}
+
 .nav {
     background-color: #F29696;
     color: #5F1818;
