@@ -118,6 +118,10 @@ footer {
     padding-left: 20px;
     padding-right: 10px;
     color: #5F1818;
+    background-image: url(/footerimage.PNG);
+    background-size: 15%;
+    background-position: 55%;
+    background-repeat: no-repeat;
 }
 
 footer a {
@@ -449,12 +453,7 @@ footer a:hover {
     transform: none;
 }
 
-footer {
-    background-image: url(/footerimage.PNG);
-    background-size: 15%;
-    background-position: 55%;
-    background-repeat: no-repeat;
-}
+
 
 .modal {
     padding: 55px;
