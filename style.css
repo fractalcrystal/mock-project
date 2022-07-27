@@ -540,3 +540,35 @@ footer {
 .ourstory1 h1 {
     text-align: center;
 }
+
+.fa {
+    padding: 7px;
+    text-align: center;
+    margin: 5px 2pxmargin: 5px 2px;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.fa:hover {
+    background-color: white;
+}
+.fa-facebook {
+    background: #5F1818;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #5F1818;
+    color: white;
+  }
+
+.fa-twitter {
+    background: #5F1818;
+    color: white;
+  }
+
+.fa-linkedin {
+    background: #5F1818;
+    color: white;
+  }
