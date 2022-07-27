@@ -278,6 +278,12 @@ footer a:hover {
     font-weight: 500;
     padding: 20px;
 }
+
+.text7 {
+    background-color: #F29696;
+    padding: 10px;
+    text-align: center;
+}
 .carousel {
 	margin: 0px;
 	padding: 0px;

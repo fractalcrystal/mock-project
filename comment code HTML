@@ -22,3 +22,62 @@
 
 </html>
 
+ <!-- onclick="openModal()" -->
+
+    <!-- <div class=".modal">
+      <div class="modal" id="modal1">
+        <div class="modal-background"></div>
+      <div class="modal-card">
+      <header class="modal-card-head">
+        <h2 aside style="width:60%;margin:auto;">
+          Thank You!
+        </h2 aside>
+      </header>
+      <section class="modal-card-body">
+        <h3> Your comment has been submitted!</h3>
+        <script type="text/javascript">
+                      document.getElementById("crazy").onclick = function () {
+                          location.href = "./crazy.html";
+                      };
+        </script>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-danger" type='sumbmit' aside style="width:60%;margin:auto;">
+          Exit
+        </button>
+      </footer>
+    </div>
+  </div>
+    
+  </button>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("modal1")
+      .classList.add("is-active");
+  }
+
+  function closeModal() {
+    document.getElementById("modal1")
+      .classList.remove("is-active");
+  }
+  
+  document.querySelectorAll(
+".modal-background, .modal-close,.modal-card-head .delete, .modal-card-foot .button"
+  ).forEach(($el) => {
+    const $modal = $el.closest(".modal");
+    $el.addEventListener("click", () => {
+
+      $modal.classList.remove("is-active");
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const e = event || window.event;
+    if (e.keyCode === 27) {
+      closeModal();
+    }
+  });
+</script> -->
+

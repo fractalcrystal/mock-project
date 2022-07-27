@@ -1,11 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Something Sweet</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/98ec21bfef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -40,13 +43,79 @@
     </figure>
     </div>
 
-  <div>
-    <div id="text1">
-      <h3>Always satisfy your sweet craving</h3>
-      <p>Never miss a thing and keep up to date with all the latest Shoppe news! </p>
-      <button class="button1" type="button" onclick="alert('All ice cream will be yours!')">Sign up!</button>
+    <div>
+      <div id="text6">
+        <h3>Always satisfy your sweet craving</h3>
+        <p>Never miss a thing and keep up to date with all the latest Shoppe news! </p>
+        <div class=".modal">
+          <div class="modal" id="modal2">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <h6 aside style="width:60%;margin:auto;">
+                  Satisfy your sweet tooth!
+                          </h6>
+              </header>
+              <section class="modal-card-body">
+                  <div class="comment-box">
+                      <div class="text7">
+                      <form action="#" aside style="width:40%;margin:auto;">
+                          <h2 aside style="width:60%;margin:auto;">Name</h2><input type="text" name="full_name" placeholder="Full name...">
+                          <br><h2 aside style="width:60%;margin:auto;">Email</h2><input type="email" name="email" placeholder="Email address...">
+                          <br><h2 aside style="width:60%;margin:auto;">Phone</h2><input type="phonenumber" name="mobile" placeholder="Mobile number"><br>
+                          <br><button class="button1" type="submit">Sign Up!</button>
+              
+                      </form>
+                   </div>
+                   </div>
+        
+        
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-danger">
+                  Cancel
+              </button>
+              </footer>
+            </div>
+          </div>
+        
+          <!-- Modal button for trigger -->
+          <button class="button1" type="button" onclick="openModal()">Sign Up!</button>
+          
+            
+          </button>
+        </div>
+        
+        <script>
+          function openModal() {
+            document.getElementById("modal2")
+              .classList.add("is-active");
+          }
+        
+          function closeModal() {
+            document.getElementById("modal2")
+              .classList.remove("is-active");
+          }
+          
+          document.querySelectorAll(
+        ".modal-background, .modal-close,.modal-card-head .delete, .modal-card-foot .button"
+          ).forEach(($el) => {
+            const $modal = $el.closest(".modal");
+            $el.addEventListener("click", () => {
+        
+              $modal.classList.remove("is-active");
+            });
+          });
+        
+          document.addEventListener("keydown", (event) => {
+            const e = event || window.event;
+            if (e.keyCode === 27) {
+              closeModal();
+            }
+          });
+        </script>
+      </div>
     </div>
-  </div>
 
 
     <footer>

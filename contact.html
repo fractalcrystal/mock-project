@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/98ec21bfef.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href=
@@ -22,8 +22,11 @@
   <script id="replace_with_navbar" src="nav.js"></script>  
 
   <div>
+    <div class="ourstory1">
+      <h1><span style="background-color: hsla(0, 100%, 90%, 0.8)">Contact Us</span></h1>
+      </div>
+      
     <div id="text1">
-    <h2>Contact</h2>
     <h3>Have a question about your order? Email us.</h3><br>
 
 
@@ -32,66 +35,11 @@
       <form action="#">
       <input type="text" name="full_name" placeholder="Full name..."> <input type="email" name="email" placeholder="Email Address..."><br>
       <br><textarea name="comment" placeholder="Type your comment..." id="w3review" name="w3review" rows="4" cols="42"></textarea><br>
-      <button class="button2" type="button" onclick="openModal()">Submit Comment</button>
+      <button class="button2" type="submit">Submit Comment</button>
     </form>
     </div>
 
-    <div class=".modal">
-      <div class="modal" id="modal1">
-        <div class="modal-background"></div>
-      <div class="modal-card">
-      <header class="modal-card-head">
-        <h2 aside style="width:60%;margin:auto;">
-          Thank You!
-        </h2 aside>
-      </header>
-      <section class="modal-card-body">
-        <h3> Your comment has been submitted!</h3>
-        <script type="text/javascript">
-                      document.getElementById("crazy").onclick = function () {
-                          location.href = "./crazy.html";
-                      };
-        </script>
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-danger" aside style="width:60%;margin:auto;">
-          Exit
-        </button>
-      </footer>
-    </div>
-  </div>
-    
-  </button>
-</div>
-
-<script>
-  function openModal() {
-    document.getElementById("modal1")
-      .classList.add("is-active");
-  }
-
-  function closeModal() {
-    document.getElementById("modal1")
-      .classList.remove("is-active");
-  }
-  
-  document.querySelectorAll(
-".modal-background, .modal-close,.modal-card-head .delete, .modal-card-foot .button"
-  ).forEach(($el) => {
-    const $modal = $el.closest(".modal");
-    $el.addEventListener("click", () => {
-
-      $modal.classList.remove("is-active");
-    });
-  });
-
-  document.addEventListener("keydown", (event) => {
-    const e = event || window.event;
-    if (e.keyCode === 27) {
-      closeModal();
-    }
-  });
-</script>
+   
 
   <br> Ice-Creme Shoppe is a registered Oxford LLC located at Alfred St, Wantage, Oxfordshire, OX12 8AE<br>
 
@@ -111,6 +59,80 @@ loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
   <br>Learn more about our store details and policies <a target="_blank" title="Ninja Melk Store Details, Terms and Return Policy" rel="noopener noreferrer" class="text-link">here.</a>
 </div>
 </div>
+
+  <div>
+    <div id="text6">
+      <h3>Always satisfy your sweet craving</h3>
+      <p>Never miss a thing and keep up to date with all the latest Shoppe news! </p>
+      <div class=".modal">
+        <div class="modal" id="modal2">
+          <div class="modal-background"></div>
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <h6 aside style="width:60%;margin:auto;">
+                Satisfy your sweet tooth!
+                        </h6>
+            </header>
+            <section class="modal-card-body">
+                <div class="comment-box">
+                    <div class="text7">
+                    <form action="#" aside style="width:40%;margin:auto;">
+                        <h2 aside style="width:60%;margin:auto;">Name</h2><input type="text" name="full_name" placeholder="Full name...">
+                        <br><h2 aside style="width:60%;margin:auto;">Email</h2><input type="email" name="email" placeholder="Email address...">
+                        <br><h2 aside style="width:60%;margin:auto;">Phone</h2><input type="phonenumber" name="mobile" placeholder="Mobile number"><br>
+                        <br><button class="button1" type="submit">Sign Up!</button>
+            
+                    </form>
+                 </div>
+                 </div>
+      
+      
+            </section>
+            <footer class="modal-card-foot">
+              <button class="button is-danger">
+                Cancel
+            </button>
+            </footer>
+          </div>
+        </div>
+      
+        <!-- Modal button for trigger -->
+        <button class="button1" type="button" onclick="openModal()">Sign Up!</button>
+        
+          
+        </button>
+      </div>
+      
+      <script>
+        function openModal() {
+          document.getElementById("modal2")
+            .classList.add("is-active");
+        }
+      
+        function closeModal() {
+          document.getElementById("modal2")
+            .classList.remove("is-active");
+        }
+        
+        document.querySelectorAll(
+      ".modal-background, .modal-close,.modal-card-head .delete, .modal-card-foot .button"
+        ).forEach(($el) => {
+          const $modal = $el.closest(".modal");
+          $el.addEventListener("click", () => {
+      
+            $modal.classList.remove("is-active");
+          });
+        });
+      
+        document.addEventListener("keydown", (event) => {
+          const e = event || window.event;
+          if (e.keyCode === 27) {
+            closeModal();
+          }
+        });
+      </script>
+    </div>
+  </div>
 
     <footer>
         <div class="container">
