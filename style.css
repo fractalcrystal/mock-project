@@ -262,6 +262,22 @@ footer a:hover {
     padding: 50px;
 }
 
+#text6 {
+    text-align: center;
+    background-color: #f6bcbc;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#text6 p {
+    color: #4195C5;
+    line-height: 5Opx;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 20px;
+}
 .carousel {
 	margin: 0px;
 	padding: 0px;
@@ -512,3 +528,15 @@ footer {
     from {opacity: 0;}
     to {opacity:1 ;}
   }
+
+.ourstory1 {
+    background-color: #f6bcbc;
+    background-image: url(BackGround_Ice_trans.PNG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.ourstory1 h1 {
+    text-align: center;
+}
