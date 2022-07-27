@@ -545,3 +545,39 @@ footer a:hover {
 .ourstory1 h1 {
     text-align: center;
 }
+
+.ourstorytext {
+
+}
+
+#ourstorytext {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ourstorytext p {
+    color: #4195C5;
+    line-height: 5Opx;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+#contact1 {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact1 p {
+    color: #4195C5;
+    line-height: 5Opx;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 20px;
+}
